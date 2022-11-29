@@ -1,0 +1,19 @@
+
+***********************************************************************************************
+
+TO-DO
+
+- Leaderboard Component
+- Minimap Component
+- Random Map Generation
+- Mouse Movement
+- Enemy Generation
+- Enemy AI Adaptive Mechanics
+- Player Fluid Mechanics
+- Player Name/Color Selection Screen
+- Opening Screen
+- Name
+- Color Pallete Generation
+- Pamphlet Explaining Impact
+
+***********************************************************************************************
