@@ -4,16 +4,25 @@
 TO-DO
 
 - Leaderboard Component
-- Minimap Component
-- Random Map Generation
+- Player Name/Color Selection Screen
+- Color Pallete Generation
+- Opening Screen
+- Game Name
+
 - Mouse Movement
+- Player Fluid Mechanics
+
 - Enemy Generation
 - Enemy AI Adaptive Mechanics
-- Player Fluid Mechanics
-- Player Name/Color Selection Screen
-- Opening Screen
-- Name
-- Color Pallete Generation
+
+- Random Map Generation
+- Minimap Component
+
 - Pamphlet Explaining Impact
+- Banner
+- Club Logo
+
+- SFX
+- Music
 
 ***********************************************************************************************
