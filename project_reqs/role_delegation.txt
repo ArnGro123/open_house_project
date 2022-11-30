@@ -1,0 +1,20 @@
+***********************************************************************************************
+
+Player Name & Color Pallete - Jason 
+
+Take player name input, through PyGame text box
+
+Have player select a color (should stand out from blue, green, grey/black)
+
+Generate a complementary color for enemies (should stand out from blue, green, grey/black)
+
+
+Random Map Generation - Sid
+
+Make a random map of specified size using 2d lists
+
+3 types of backgrounds: water (blue), forest (green), mountain (grey/black)
+
+portions should resemble a type of geography, i.e. portion is forest and another is water 
+
+***********************************************************************************************
