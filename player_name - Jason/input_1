@@ -10,7 +10,9 @@ Install "pygame_gui" for the program to load in
 
 pygame.init()
 
-width, height = 1000, 500
+width = 1000
+height = 500
+
 SCREEN = pygame.display.set_mode((width, height))
 
 pygame.display.set_caption("Text Input in PyGame | BaralTech")
