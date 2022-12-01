@@ -9,12 +9,34 @@ Have player select a color (should stand out from blue, green, grey/black)
 Generate a complementary color for enemies (should stand out from blue, green, grey/black)
 
 
-Random Map Generation - Sid
+Random Map Generation - Sid and Ali 
 
 Make a random map of specified size using 2d lists
 
 3 types of backgrounds: water (blue), forest (green), mountain (grey/black)
 
 portions should resemble a type of geography, i.e. portion is forest and another is water 
+
+***********************************************************************************************
+
+Mini-Map - William and Patryk 
+
+Produces a map on the right hand corner displaying map, enemies, and player. 
+
+***********************************************************************************************
+
+Enemy Generation / Enemy AI Adaptive Mechanics- Jonathan and Aris 
+
+***********************************************************************************************
+
+Game Name / Opening Screen / Music SFX - Krishan and Andre
+
+***********************************************************************************************
+
+Pamphlet Explaining Impact / Banner / Club Log - Rishon 
+
+***********************************************************************************************
+
+Leaderboard Component - Ioannis and Standley 
 
 ***********************************************************************************************
