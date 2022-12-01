@@ -3,6 +3,8 @@
 
 TO-DO
 
+- make screen zoom out when organism gets as big as the screen
+
 - Leaderboard Component
 - Player Name/Color Selection Screen
 - Color Pallete Generation
