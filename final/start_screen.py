@@ -24,15 +24,30 @@ class StartScreen:
 
         #TODO: Add Game Title --> bouncing image?
 
+        #GAME NAME TITLE: Binary Fission
+
         #TODO: Add Player Entry Box --> store input in text file, on run
 
         self.text_box_length = self.screen_length / 3
         self.text_box_height = self.screen_height / 15
         self.text_box_x = (self.screen_length / 2) - (self.text_box_length / 2)
         self.text_box_y = (self.screen_height / 2) - (self.text_box_height / 2)
-        self.text_input = pygame_gui.elements.UITextEntryLine(relative_rect=pygame.Rect(self.text_box_x, self.text_box_y, self.text_box_length, self.text_box_height), manager=self.manager,object_id='#main_text_entry')
 
-        #TODO: Add Run Button
+        self.text_input_box = pygame_gui.elements.UITextEntryLine(
+            relative_rect=pygame.Rect(self.text_box_x, self.text_box_y, self.text_box_length, self.text_box_height), 
+            manager=self.manager,
+            object_id='#main_text_entry')
+
+        self.run_button_length = self.screen_length / 5
+        self.run_button_height = self.screen_height / 15
+        self.run_button_x = (self.screen_length / 2) - (self.run_button_length / 2)
+        self.run_button_y = self.text_box_y + 2*self.run_button_height 
+
+        self.run_button = pygame_gui.elements.UIButton(
+            relative_rect=pygame.Rect(self.run_button_x, self.run_button_y, self.run_button_length, self.run_button_height),
+            text='RUN',
+            manager=self.manager)
+
 
     def process_events(self, event):
         '''
@@ -64,6 +79,13 @@ while running == True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
+        
+        if event.type == pygame_gui.UI_BUTTON_PRESSED:
+              if event.ui_element == start_screen.run_button: 
+                  print(start_screen.text_input_box.text)
+
+        if (event.type == pygame_gui.UI_TEXT_ENTRY_FINISHED and event.ui_object_id == '#main_text_entry'):
+                print(event.text)
 
         start_screen.process_events(event)
 
