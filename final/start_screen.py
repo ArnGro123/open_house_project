@@ -2,29 +2,36 @@ import pygame
 import sys
 import pygame_gui
 
-WINDOW_SIZE = (500,500)
-FPS = 30
-
 pygame.init()
-display = pygame.display.set_mode(WINDOW_SIZE)
+display = pygame.display.set_mode()
 clock = pygame.time.Clock()
 
+DISPLAY_SIZE = display.get_size()
+FPS = 30
 running = True
 
 class StartScreen:
     '''
     A class to create the opening menu for the game
     '''
-    def __init__(self, screen_length, screen_width):
+    def __init__(self, screen_length, screen_height):
         '''
         Constructs UI manager and elements
         '''
         self.screen_length = screen_length
-        self.screen_width = screen_width
-        self.manager = pygame_gui.UIManager((self.screen_length, self.screen_width))
+        self.screen_height = screen_height
+        self.manager = pygame_gui.UIManager((self.screen_length, self.screen_height))
 
-        #TODO: Add Game Title
-        #TODO: Add Player Entry Box
+        #TODO: Add Game Title --> bouncing image?
+
+        #TODO: Add Player Entry Box --> store input in text file, on run
+
+        self.text_box_length = self.screen_length / 3
+        self.text_box_height = self.screen_height / 15
+        self.text_box_x = (self.screen_length / 2) - (self.text_box_length / 2)
+        self.text_box_y = (self.screen_height / 2) - (self.text_box_height / 2)
+        self.text_input = pygame_gui.elements.UITextEntryLine(relative_rect=pygame.Rect(self.text_box_x, self.text_box_y, self.text_box_length, self.text_box_height), manager=self.manager,object_id='#main_text_entry')
+
         #TODO: Add Run Button
 
     def process_events(self, event):
@@ -45,7 +52,7 @@ class StartScreen:
         '''
         self.manager.draw_ui(display)
 
-start_screen = StartScreen(WINDOW_SIZE[0], WINDOW_SIZE[1])
+start_screen = StartScreen(DISPLAY_SIZE[0], DISPLAY_SIZE[1])
 
 while running == True:
 
@@ -61,8 +68,6 @@ while running == True:
         start_screen.process_events(event)
 
     display.fill("black")
-
-    start_screen.draw_button()
 
     start_screen.draw_ui()
     pygame.display.update()
